@@ -1,0 +1,25 @@
+<section>
+
+    <div class="d-flex justify-content-between">
+      <h4>Usuarips</h4>
+      <a routerLink="/person/create" class="btn btn-success">Ver Tablas</a>
+    </div>
+
+    <br>
+    <div class="container" id="content" #content>  
+    <table class="table ">
+      <tr>
+        <th>id</th>
+        <th>Nombre</th>
+        <th>Direccion</th>
+        <th>Fecha nacimiento</th>
+        <th width="220px">Action</th>
+      </tr>
+      <tr *ngFor="let person of persons">
+        <td>{{ person.idPerson }}</td>
+        <td>{{ person.Direccion }}</td>
+        <td>{{ person.fnac }}</td>
+      </tr>
+    </table>
+    </div>
+ </section>
